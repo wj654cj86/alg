@@ -38,6 +38,10 @@ algxControllers.controller('algxController', ["$scope", "$location", "debounce",
 
   var search = $location.search();
 
+  if(search.cycleView == 'disabled'){
+    $scope.cycleView_disabled = true;
+  }
+
   function indexBy(list, key) {
     var obj = {};
     for (var i in list) {

@@ -41,7 +41,7 @@
       id="viewer"
     >
     </div><div id="controls">
-      <button class="control" id="cycleView" title="Change View" data-ng-click="nextView()">
+      <button class="control" id="cycleView" title="Change View" data-ng-model="cycleView" data-ng-disabled="cycleView_disabled" data-ng-click="nextView()">
         <i class="fa fa-cube"></i>
       </button><button class="control" id="reset" title="Reset">
         <i class="fa fa-fast-backward"></i>
